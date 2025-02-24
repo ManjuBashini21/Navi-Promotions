@@ -147,7 +147,7 @@
                             </div>
                             <div class="col-md-12 col-lg-4 col-xl-4 mil-mb-30">
                                 <div class="mil-adaptive-right">
-                                    <a href="#." class="mil-button mil-border"><span>Apply Now</span></a>
+                                    <a href="#" class="apply-button mil-button mil-border" data-target="video-editor-modal"><span>Apply Now</span></a>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +167,7 @@
                             </div>
                             <div class="col-md-12 col-lg-4 col-xl-4 mil-mb-30">
                                 <div class="mil-adaptive-right">
-                                    <a href="#." class="mil-button mil-border"><span>Apply Now</span></a>
+                                    <a href="#" class="apply-button mil-button mil-border" data-target="associate-manager-modal"><span>Apply Now</span></a>
                                 </div>
                             </div>
                         </div>
@@ -236,6 +236,61 @@
 
 
                 </ul>
+
+                <!-- Video Editor Modal -->
+                <div id="video-editor-modal" class="mil-modal">
+                    <div class="mil-modal-content">
+                        <span class="mil-close">&times;</span>
+                        <h2 class="mil-modal-title">Video Editor Role</h2>
+                        <p class="mil-modal-subtitle">Requirements</p>
+                        <ul class="mil-modal-list">
+                            <li>Proficiency in Adobe Premiere Pro, After Effects</li>
+                            <li>Experience in video editing & motion graphics</li>
+                            <li>Basic understanding of color grading & sound editing</li>
+                        </ul>
+                        <p class="mil-modal-subtitle">Qualifications</p>
+                        <ul class="mil-modal-list">
+                            <li>Bachelor's degree in Multimedia/Film Production</li>
+                            <li>1+ years of experience in video editing</li>
+                        </ul>
+                        <form class="mil-form">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <input type="tel" placeholder="Your Phone Number" required>
+                            <input type="file" accept=".pdf,.docx" required>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Associate Manager Modal -->
+                <div id="associate-manager-modal" class="mil-modal">
+                    <div class="mil-modal-content">
+                        <span class="mil-close">&times;</span>
+                        <h2 class="mil-modal-title">Associate Manager Role</h2>
+                        <p class="mil-modal-subtitle">Requirements</p>
+                        <ul class="mil-modal-list">
+                            <li>Strong leadership & communication skills</li>
+                            <li>Experience in team management</li>
+                            <li>Knowledge of business strategy & operations</li>
+                        </ul>
+                        <p class="mil-modal-subtitle">Qualifications</p>
+                        <ul class="mil-modal-list">
+                            <li>MBA or equivalent experience</li>
+                            <li>2+ years of management experience</li>
+                        </ul>
+                        <form class="mil-form">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <input type="tel" placeholder="Your Phone Number" required>
+                            <input type="file" accept=".pdf,.docx" required>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+
+
             </div>
         </section>
         <!-- careers end -->
@@ -633,6 +688,56 @@
 
     </div>
     <!-- wrapper end -->
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // Ensure modals remain hidden on load
+    document.querySelectorAll(".mil-modal").forEach(modal => {
+        modal.style.display = "none";
+    });
+
+    // Handle apply button click
+    document.querySelectorAll(".apply-button").forEach(button => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent unwanted scrolling
+
+            let targetModalId = this.getAttribute("data-target");
+            let targetModal = document.getElementById(targetModalId);
+
+            if (targetModal) {
+                targetModal.style.display = "flex"; // Show modal
+                setTimeout(() => {
+                    targetModal.classList.add("show"); // Add smooth fade-in
+                }, 10);
+            }
+        });
+    });
+
+    // Handle close button click
+    document.querySelectorAll(".mil-close").forEach(closeBtn => {
+        closeBtn.addEventListener("click", function () {
+            let modal = this.closest(".mil-modal");
+            modal.classList.remove("show");
+            setTimeout(() => {
+                modal.style.display = "none";
+            }, 300); // Matches fade-out duration
+        });
+    });
+
+    // Close modal when clicking outside
+    window.onclick = function (event) {
+        document.querySelectorAll(".mil-modal").forEach(modal => {
+            if (event.target === modal) {
+                modal.classList.remove("show");
+                setTimeout(() => {
+                    modal.style.display = "none";
+                }, 300);
+            }
+        });
+    };
+});
+
+    </script>
 
     <!-- jQuery js -->
     <script src="js/plugins/jquery.min.js"></script>
