@@ -92,6 +92,10 @@ body {
   height: auto;
 }
 
+.mil-blog p, li {
+  text-align: justify;
+}
+
 /* -------------------------------------------
 
 typography
