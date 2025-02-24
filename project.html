@@ -23,16 +23,17 @@
     <div class="mil-wrapper">
         <!-- top bar -->
         <div class="mil-top-position mil-fixed">
-            <div class="mil-top-panel">
+            <div class="mil-top-panel mil-top-panel-transparent mil-animated">
                 <!-- mil-top-panel-transparent -->
                 <div class="container">
-                    <a href="home-1.html" class="mil-logo" style="width: 140px"></a>
+                    <a href="index.html" class="mil-logo" style="width: 140px"></a>
                     <div class="mil-navigation">
                         <nav>
                             <ul>
-                                <li class="mil-has-children">
-                                    <a href="#.">Enterprise</a>
-                                    <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                    <!-- <ul>
+                                        <li><a href="home-2.html">Home V2</a></li>
                                         <li><a href="about.html">About us</a></li>
                                         <li><a href="team.html">Team</a></li>
                                         <li><a href="team-single.html">Team Member</a></li>
@@ -40,18 +41,25 @@
                                         <li><a href="prices.html">Prices</a></li>
                                         <li><a href="faq.html">FAQ</a></li>
                                         <li><a href="event.html">Event</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
-                                <li><a href="portfolio.html">Case Studies</a></li>
-                                <li class="mil-has-children">
-                                    <a href="#.">Services</a>
-                                    <ul>
+
+                                <li><a href="about.html">About us</a></li>
+
+                                <li>
+                                    <a href="service-1.html">Services</a>
+                                    <!-- <ul>
                                         <li><a href="service-1.html">Service 1</a></li>
                                         <li><a href="service-2.html">Service 2</a></li>
                                         <li><a href="service-3.html">Service 3</a></li>
                                         <li><a href="service-4.html">Service 4</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
+
+                                <li><a href="portfolio.html">Portfolio</a></li>
+
+                               
+<!-- 
                                 <li class="mil-has-children">
                                     <a href="#.">Solutions</a>
                                     <ul>
@@ -59,16 +67,23 @@
                                         <li><a href="solution-2.html">Solution 2</a></li>
                                         <li><a href="solution-3.html">Solution 3</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
+
+
                                 <li><a href="blog.html">Blog</a></li>
+
+                                <li><a href="careers.html">Careers</a></li>
+
                                 <li><a href="contact.html">Contact Us</a></li>
+<!-- 
                                 <li class="mil-has-children">
                                     <a href="#.">Other</a>
                                     <ul>
                                         <li><a href="coming-soon.html">Coming Soon</a></li>
                                         <li><a href="404.html">404</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
+
                             </ul>
                             <div class="mil-search-icon">
                                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -368,9 +383,9 @@
 
                             <img src="img/logo/logo-light.png" alt="" class="mil-logo mil-mb-30" style="width: 140px">
 
-                            <p class="mil-light-soft mil-mb-30">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            <p class="mil-light-soft mil-mb-30" style="text-align: justify;">At Navi Promotions, we specialize in crafting impactful marketing strategies, cutting-edge digital solutions, and powerful branding to help businesses grow. Our expertise spans web development, social media marketing, SEO, and more, ensuring your brand stands out in the competitive market.</p>
 
-                            <a href="#." class="mil-app-btn mil-mb-5">
+                            <!-- <a href="#." class="mil-app-btn mil-mb-5">
                                 <i class="fab fa-google-play"></i>
                                 <div class="mil-app-text">
                                     <span class="mil-accent mil-text-sm">Available on the</span>
@@ -384,31 +399,34 @@
                                     <span class="mil-accent mil-text-sm">Download on the</span>
                                     <div class="mil-h6">App Store</div>
                                 </div>
-                            </a>
+                            </a> -->
 
                         </div>
-                        <div class="col-xl-7 mil-mt-60-adapt">
+                        <div class="col-xl-7">
 
-                            <div class="row">
-                                <div class="col-lg-7 mil-mb-30">
-
-                                    <h3 class="mil-light mil-up-font mil-mb-30">Join The <span class="mil-accent">ITSulu</span> <br>Experience</h3>
-                                    <p class="mil-light-soft">Lorem ipsum dolor sit amet, consectetuer<br> adipiscing elit, sed diam nonummy.</p>
-
-                                </div>
-                                <div class="col-lg-5 mil-mb-30">
-
-                                    <form>
-
-                                        <input class="mil-rounded-input mil-text-center mil-mb-5" type="text" placeholder="Your email address">
-                                        <button class="mil-button mil-accent-bg mil-fw"><span>Subscribe Now</span></button>
-
-                                    </form>
-
-                                </div>
-                            </div>
-
+                            <h3 class="mil-light mil-up-font mil-mb-30 text-center">
+                                Join The <span class="mil-accent">Navi Promotions</span> Experience
+                            </h3>
+                        
+                            <p class="mil-light-soft text-center mil-mb-30">
+                                Elevate your brand with cutting-edge marketing, design, and digital solutions.
+                            </p>
+                        
+                            <form class="d-flex justify-content-center">
+                                <input class="mil-rounded-input mil-text-center mil-mr-10" 
+                                       type="text" 
+                                       placeholder="Your email address"
+                                       style="width: 300px; height: 40px; font-size: 14px; margin-right: 20px; padding: 25px;">
+                                
+                                <button class="mil-button mil-accent-bg mil-fw" 
+                                        style="height: 40px; font-size: 14px; padding: 25px; width: 300px;">
+                                    <span>Subscribe</span>
+                                </button>
+                            </form>
+                        
                         </div>
+                        
+                        
                     </div>
                 </div>
                 <div class="mil-divider mil-light"></div>
@@ -424,13 +442,13 @@
                     <ul class="mil-additional-links mil-light">
                         <li><a href="#.">Terms & Condition</a></li>
                         <li><a href="#.">Privacy Policy</a></li>
-                        <li><a href="#.">Sitemap</a></li>
+                        <!-- <li><a href="#.">Sitemap</a></li> -->
                     </ul>
                 </div>
             </div>
             <div class="mil-footer-bottom">
                 <div class="container">
-                    <p class="mil-text-sm mil-light">© ITSulu 2023.</p>
+                    <p class="mil-text-sm mil-light">© Navi Promotions</p>
                     <p class="mil-text-sm mil-light">All Rights Reserved.</p>
                 </div>
             </div>
