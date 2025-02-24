@@ -96,6 +96,14 @@ body {
   text-align: justify;
 }
 
+.mil-p-120-90 p,li{
+  text-align: justify;
+}
+
+.mil-p-120-60 p,li{
+  text-align: justify;
+}
+
 /* -------------------------------------------
 
 typography
