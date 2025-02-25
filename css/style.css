@@ -3873,9 +3873,12 @@ breadcrumbs
           align-items: center;
 }
 .mil-breadcrumbs li a {
-  color: rgb(18, 24, 32);
+  color: #ffffff;
   -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+}
+.mil-relative h2{
+  color: rgb(245, 124, 0);
 }
 .mil-breadcrumbs li a:hover {
   color: rgb(245, 124, 0);
@@ -3885,7 +3888,7 @@ breadcrumbs
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: rgb(245, 124, 0);
+  background-color: #ffffff;
   margin: 0 15px;
 }
 .mil-breadcrumbs li:last-child {
@@ -3896,7 +3899,7 @@ breadcrumbs
 }
 .mil-breadcrumbs li:last-child a {
   pointer-events: none;
-  color: rgba(18, 24, 32, 0.5);
+  color: #ffffff;
 }
 
 /* -------------------------------------------
@@ -3978,6 +3981,7 @@ team
 .mil-team-card p {
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  text-align: center;
 }
 .mil-team-card:hover .mil-image-frame .mil-team-circle {
   -webkit-transform: scale(1);
