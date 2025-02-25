@@ -1666,6 +1666,54 @@ top panel
   }
 }
 
+.terms-container  {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+.terms-container p{
+  line-height: 2rem;
+  text-align: justify;
+}
+.terms-container .section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+  color: rgb(245, 124, 0);
+}
+.terms-container .terms-section, .privacy-section {
+  background: #f8f9fa;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+.terms-container .terms-section:hover, .privacy-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.terms-container .terms-heading, .privacy-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  transition: color 0.3s ease-in-out;
+}
+.terms-container .terms-heading:hover, .privacy-heading:hover {
+  color: rgb(245, 124, 0);
+}
+.terms-container ul {
+  padding-left: 20px;
+}
+.terms-container ul li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+.terms-container ul li i {
+  margin-right: 8px;
+  color: rgb(245, 124, 0);
+}
+
 .mil-top-panel {
   padding: 0 10px;
   height: 100px;
@@ -1711,10 +1759,12 @@ top panel
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../img/logo/logo-dark.png);
+  background-image: url(../img/logo/navi-logo-dark.png);
   background-position: center;
   background-repeat: no-repeat;
+
   background-size: contain;
+
 }
 .mil-top-panel .mil-navigation nav {
   display: -webkit-box;
@@ -1920,7 +1970,7 @@ top panel
           box-shadow: none;
 }
 .mil-top-panel.mil-top-panel-transparent .mil-logo {
-  background-image: url(../img/logo/logo-light.png);
+  background-image: url(../img/logo/navi-logo-light.png);
 }
 .mil-top-panel.mil-top-panel-transparent .mil-navigation nav ul li a {
   color: rgb(255, 255, 255);
@@ -1945,7 +1995,7 @@ top panel
     background-color: rgb(255, 255, 255);
   }
   .mil-top-panel.mil-top-panel-transparent .mil-logo {
-    background-image: url(../img/logo/logo-dark.png);
+    background-image: url(../img/logo/navi-logo-dark.png);
   }
   .mil-top-panel.mil-top-panel-transparent .mil-navigation nav ul li a {
     color: rgb(18, 24, 32);
