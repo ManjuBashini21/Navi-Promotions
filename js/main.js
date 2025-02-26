@@ -84,6 +84,10 @@ $(function () {
         slidesPerView: 1,
         spaceBetween: 30,
         speed: 800,
+        autoplay: {
+            delay: 3000, 
+            disableOnInteraction: false, 
+        },
         navigation: {
             prevEl: '.mil-works-prev',
             nextEl: '.mil-works-next',
@@ -118,6 +122,10 @@ $(function () {
         slidesPerView: 1,
         spaceBetween: 30,
         speed: 800,
+        autoplay: {
+            delay: 3000, 
+            disableOnInteraction: false, 
+        },
         navigation: {
             prevEl: '.mil-revi-prev',
             nextEl: '.mil-revi-next',
@@ -131,6 +139,7 @@ $(function () {
             }
         },
     });
+    
 
     var swiper = new Swiper('.mil-revi-slider-2', {
         slidesPerView: 1,
