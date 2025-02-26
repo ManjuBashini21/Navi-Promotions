@@ -85,6 +85,10 @@ body {
   scroll-behavior: smooth;
 }
 
+body a:hover{
+  text-decoration: none;
+}
+
 .mil-wrapper {
   position: relative;
   overflow: hidden;
@@ -92,7 +96,7 @@ body {
   height: auto;
 }
 
-.mil-blog p, li {
+/* .mil-blog p, li {
   text-align: justify;
 }
 
@@ -102,7 +106,7 @@ body {
 
 .mil-p-120-60 p,li{
   text-align: justify;
-}
+} */
 
 
 .mil-modal {
@@ -467,7 +471,7 @@ list
       -ms-flex-align: center;
           align-items: center;
 }
-/* .mil-simple-list li:before {
+.mil-simple-list li:before {
   content: "";
   width: 7px;
   height: 7px;
@@ -476,7 +480,7 @@ list
   left: 0;
   top: 0;
   margin-right: 15px;
-} */
+}
 
 .mil-check-list {
   margin: 0;
@@ -1770,6 +1774,11 @@ top panel
   object-fit: contain;  
 } */
 
+.mil-services i{
+  color: rgb(245, 124, 0);
+  margin-right: 10px;
+}
+
 .mil-top-panel .mil-navigation nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1998,9 +2007,9 @@ top panel
   .mil-top-panel.mil-top-panel-transparent {
     background-color: rgb(255, 255, 255);
   }
-  .mil-top-panel.mil-top-panel-transparent .mil-logo {
+  /* .mil-top-panel.mil-top-panel-transparent .mil-logo {
     background-image: url(../img/logo/navi-logo-dark.png);
-  }
+  } */
   .mil-top-panel.mil-top-panel-transparent .mil-navigation nav ul li a {
     color: rgb(18, 24, 32);
   }
