@@ -57,7 +57,8 @@ p.s. I am available for Freelance hire (UI design, web development). email: mill
     - additional pages
 
 --------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&family=Sora:wght@100;200;300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap"); /* -------------------------------------------
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+ /* -------------------------------------------
 
 main
 
@@ -5588,14 +5589,14 @@ additional pages
   list-style: none; 
 }
 
-.about-tab .mil-simple-list li::before {
+/* .about-tab .mil-simple-list li::before {
   content: "✔";
   color: rgb(245, 124, 0);
   font-size: 18px;
   position: absolute;
   left: 0;
   top: 2px;
-}
+} */
 
 @media (max-width: 768px) {
   .about-tab .nav-tabs {
