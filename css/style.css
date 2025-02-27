@@ -452,6 +452,8 @@ blockquote {
   }
 }
 
+
+
 /* -------------------------------------------
 
 list
@@ -5356,6 +5358,7 @@ footer
   position: relative;
   background-color: rgb(18, 24, 32);
   height: 90px;
+  
 }
 .mil-footer-bottom .container {
   height: 100%;
@@ -5367,10 +5370,13 @@ footer
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+      justify-content: center; /* Center content horizontally */
+          text-align: center !important;
 }
 .mil-footer-bottom .container p {
   opacity: 0.3;
+    text-align: center;
+    width: 100%; /* Ensures the text takes full width */
 }
 
 /* -------------------------------------------
@@ -5493,21 +5499,32 @@ additional pages
   list-style: none !important;
 }
 
+.about-tab .nav-tabs {
+  display: flex;
+  justify-content: center; /* Centers the list items */
+}
+
+.about-tab .nav-tabs li {
+  display: flex;
+}
 
 .about-tab .nav-tabs .mil-link {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
   color: #faa51f;
   border: 2px solid transparent;
-  border-radius: 30px;
+  border-radius: 50px;
   transition: all 0.3s ease-in-out;
   background: rgba(245, 124, 0, 0.1);
-  flex-shrink: 0; 
-  font-size: 14px; 
-  padding: 10px 15px; 
+  flex-shrink: 0;
+  font-size: 14px;
+  padding: 10px 15px;
+  width: 100%; /* Ensures the anchor fills the li */
 }
 
 
@@ -5561,6 +5578,8 @@ additional pages
   color: #faa51f;
   display: flex;
   align-items: center;
+  justify-content: center;
+
   gap: 10px;
 }
 
