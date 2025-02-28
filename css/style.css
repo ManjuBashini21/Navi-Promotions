@@ -1771,6 +1771,11 @@ top panel
   background-size: contain;
 }
 
+link[rel="icon"] {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 @media (max-width: 768px) { 
   .mil-top-panel .mil-logo img {
     content: url('../img/logo/fixed-logo.png'); 
