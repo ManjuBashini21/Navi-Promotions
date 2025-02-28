@@ -1771,6 +1771,22 @@ top panel
   background-size: contain;
 }
 
+@media (max-width: 768px) { 
+  .mil-top-panel .mil-logo img {
+    content: url('../img/logo/fixed-logo.png'); 
+    width: 180px; 
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) { 
+  .mil-top-panel .mil-logo img {
+    content: url('../img/logo/fixed-logo.png'); 
+    width: 200px; 
+    margin-bottom: 20px;
+  }
+}
+
 /* .mil-top-panel .mil-logo img {
   width: 640px;  
   height: 70px;  
@@ -5321,6 +5337,8 @@ footer
 .mil-footer-links ul li.mil-adapt-links a:last-child {
   display: none;
 }
+
+
 @media screen and (max-width: 768px) {
   .mil-footer-links ul li.mil-adapt-links a:first-child {
     display: none;
@@ -5370,13 +5388,13 @@ footer
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-      justify-content: center; /* Center content horizontally */
+      justify-content: center; 
           text-align: center !important;
 }
 .mil-footer-bottom .container p {
   opacity: 0.3;
     text-align: center;
-    width: 100%; /* Ensures the text takes full width */
+    width: 100%; 
 }
 
 /* -------------------------------------------
@@ -5482,13 +5500,14 @@ additional pages
 
 .about-tab .nav-tabs {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
+  align-items: center; 
   gap: 20px;
   border-bottom: none !important;
-  overflow-x: auto; 
-  flex-wrap: nowrap; 
-  white-space: nowrap; 
-  -webkit-overflow-scrolling: touch; 
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 
 .about-tab .nav-tabs::-webkit-scrollbar {
@@ -5499,13 +5518,17 @@ additional pages
   list-style: none !important;
 }
 
+
 .about-tab .nav-tabs {
   display: flex;
-  justify-content: center; /* Centers the list items */
+  justify-content: center; 
 }
 
 .about-tab .nav-tabs li {
   display: flex;
+  justify-content: center; 
+  align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .about-tab .nav-tabs .mil-link {
@@ -5519,18 +5542,13 @@ additional pages
   color: #faa51f;
   border: 2px solid transparent;
   border-radius: 50px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
   background: rgba(245, 124, 0, 0.1);
   flex-shrink: 0;
-  font-size: 14px;
-  padding: 10px 15px;
-  width: 100%; /* Ensures the anchor fills the li */
-}
-
-
-
-.about-tab .nav-tabs .mil-link i {
-  font-size: 18px;
+  font-size: 16px;
+  padding: 12px 18px;
+  width: auto;
+  transform: scale(0.9);
 }
 
 .about-tab .nav-tabs .mil-link:hover {
@@ -5544,6 +5562,24 @@ additional pages
   background: #faa51f;
   color: #fff;
   border-color: #faa51f;
+}
+
+.about-tab .nav-tabs .mil-link:not(.active) {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+
+.about-tab .nav-tabs .active .mil-link {
+  transform: scale(1.5); 
+  background: #faa51f;
+  color: #fff;
+  border-color: #faa51f;
+  box-shadow: 0px 4px 10px rgba(250, 165, 31, 0.5);
+  border-radius: 100%; 
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 14px 35px; 
 }
 
 
