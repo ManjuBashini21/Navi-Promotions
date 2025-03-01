@@ -28,7 +28,7 @@
                 <!-- mil-top-panel-transparent -->
                 <div class="container">
                     <a href="index.html" class="mil-logo">
-                        <img src="img/logo/navi-logo web manju.png" alt="NaviPromotion Logo" style="width: 300px; margin-top: 10px;" >
+                        <img id="logo" src="img/logo/navi-logo web manju.png" alt="NaviPromotion Logo" style="width: 300px;" >
                     </a>
                     <div class="mil-navigation">
                         <nav>
@@ -200,7 +200,7 @@
                         <div class="mil-mb-60">
                             <h5 class="mil-list-title mil-mb-30">Project Queries</h5>
                             <p class="mil-mb-20">Have questions about your project? Our team is here to assist you with any updates or clarifications.</p>
-                            <a href="mailto:projects@example.com" class="mil-link mil-link-sm">
+                            <a href="mailto:info@navipromotion.in" class="mil-link mil-link-sm">
                                 <span>Get in Touch</span><i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
@@ -210,7 +210,7 @@
                         <div class="mil-mb-60">
                             <h5 class="mil-list-title mil-mb-30">Invoices & Billing</h5>
                             <p>Need assistance with your invoice or billing details? Reach out to our support team for quick resolution.</p>
-                            <a href="mailto:billing@example.com" class="mil-link mil-link-sm">
+                            <a href="mailto:sales@navipromotion.in" class="mil-link mil-link-sm" style="margin-top: 20px;">
                                 <span>Contact Billing</span><i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
@@ -220,7 +220,7 @@
                         <div class="mil-mb-60">
                             <h5 class="mil-list-title mil-mb-30">Digital Marketing Services</h5>
                             <p>Looking to enhance your online presence? Get expert advice on SEO, social media, and marketing strategies.</p>
-                            <a href="mailto:marketing@example.com" class="mil-link mil-link-sm">
+                            <a href="mailto:info@navipromotion.in" class="mil-link mil-link-sm" style="margin-top: 20px;">
                                 <span>Explore Services</span><i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
@@ -363,6 +363,26 @@
 
     </div>
     <!-- wrapper end -->
+
+    <script>
+
+        window.addEventListener("scroll", function () {
+            var logo = document.getElementById("logo");
+            var topPanel = document.querySelector(".mil-top-panel");
+
+            if (window.scrollY > 50) {
+                logo.src = "img/logo/fixed-logo.png";
+                logo.style.margin = "0";  
+                logo.style.padding = "0";
+                topPanel.classList.add("scrolled"); 
+            } else {
+                logo.src = "img/logo/navi-logo web manju.png"; 
+                logo.style.marginTop = "10px";  
+                topPanel.classList.remove("scrolled");
+            }
+        });
+
+    </script>
 
     <!-- jQuery js -->
     <script src="js/plugins/jquery.min.js"></script>

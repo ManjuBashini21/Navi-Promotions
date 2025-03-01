@@ -29,7 +29,7 @@
 
                 <div class="container">
                     <a href="index.html" class="mil-logo">
-                        <img src="img/logo/navi-logo web manju.png" alt="NaviPromotion Logo" style="width: 300px; margin-top: 10px;">
+                        <img id="logo" src="img/logo/navi-logo web manju.png" alt="NaviPromotion Logo" style="width: 300px;" >
                     </a>
                     <div class="mil-navigation">
                         <nav>
@@ -702,6 +702,26 @@
         <!-- footer end -->
     </div>
     <!-- wrapper end -->
+
+    <script>
+
+        window.addEventListener("scroll", function () {
+            var logo = document.getElementById("logo");
+            var topPanel = document.querySelector(".mil-top-panel");
+
+            if (window.scrollY > 50) {
+                logo.src = "img/logo/fixed-logo.png";
+                logo.style.margin = "0";  
+                logo.style.padding = "0";
+                topPanel.classList.add("scrolled"); 
+            } else {
+                logo.src = "img/logo/navi-logo web manju.png"; 
+                logo.style.marginTop = "10px";  
+                topPanel.classList.remove("scrolled");
+            }
+        });
+
+    </script>
 
     <!-- jQuery js -->
     <script src="js/plugins/jquery.min.js"></script>

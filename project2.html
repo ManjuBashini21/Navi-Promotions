@@ -28,7 +28,7 @@
                 <!-- mil-top-panel-transparent -->
                 <div class="container">
                     <a href="index.html" class="mil-logo">
-                        <img src="img/logo/navi-logo web manju.png" alt="NaviPromotion Logo" style="width: 300px; margin-top: 10px;"  >
+                        <img id="logo" src="img/logo/navi-logo web manju.png" alt="NaviPromotion Logo" style="width: 300px;" >
                     </a>
                     <div class="mil-navigation">
                         <nav>
@@ -137,7 +137,7 @@
                             <h6 class="mil-mb-15">Xenex Engineering & Process Pte Ltd</h6>
                             <div class="mil-divider mil-divider-left mil-mb-30"></div>
                             <p class="mil-mb-10">Service</p>
-                            <h6 class="mil-mb-15">Enterprise Software Development</h6>
+                            <h6 class="mil-mb-15">Fiberglass Engineering Solutions</h6>
                             <div class="mil-divider mil-divider-left mil-mb-30"></div>
                             <p class="mil-mb-10">Industry</p>
                             <h6 class="mil-mb-15">FRP / GRP</h6>
@@ -155,7 +155,7 @@
                         <p class="mil-mb-60">Xenex Engineering & Process Pte Ltd needed a modern, user-friendly website to effectively showcase their GRP/FRP solutions for the oil and gas industry. The key challenges were to display their diverse projects, highlight industry expertise, and create an engaging platform that improves user experience.</p>
                     
                         <h3 class="mil-mb-30">Our Solution</h3>
-                        <p class="mil-mb-60">We developed a high-performance, SEO-optimized website tailored for Xenex Engineering & Process Pte Ltd. The website features an intuitive interface, seamless navigation, and a well-structured project portfolio to enhance customer engagement and brand credibility.</p>
+                        <p class="mil-mb-60">We developed a high-performance, SEO-optimized website for Xenex Engineering & Process Pte Ltd. The website features an intuitive interface, seamless navigation, and a well-structured project portfolio to enhance customer engagement and brand credibility.</p>
                     
                         <div class="row">
                             <div class="col-xl-6">
@@ -460,6 +460,26 @@
         <!-- footer end -->
     </div>
     <!-- wrapper end -->
+
+    <script>
+
+        window.addEventListener("scroll", function () {
+            var logo = document.getElementById("logo");
+            var topPanel = document.querySelector(".mil-top-panel");
+
+            if (window.scrollY > 50) {
+                logo.src = "img/logo/fixed-logo.png";
+                logo.style.margin = "0";  
+                logo.style.padding = "0";
+                topPanel.classList.add("scrolled"); 
+            } else {
+                logo.src = "img/logo/navi-logo web manju.png"; 
+                logo.style.marginTop = "10px";  
+                topPanel.classList.remove("scrolled");
+            }
+        });
+
+    </script>
 
     <!-- jQuery js -->
     <script src="js/plugins/jquery.min.js"></script>

@@ -1721,9 +1721,19 @@ top panel
   color: #faa51f;
 }
 
+.container::before,
+.container::after {
+    content: none !important; /* Remove any added content */
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+
 .mil-top-panel {
   padding: 0 10px;
-  height: 100px;
+  height: 150px;
   background-color: rgb(255, 255, 255);
   width: 100%;
   z-index: 999;
@@ -1791,6 +1801,17 @@ link[rel="icon"] {
     margin-bottom: 20px;
   }
 }
+
+.mil-logo img {
+  display: block; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+.mil-top-panel.scrolled .mil-logo img {
+  margin: 0 !important; /* Forcefully remove margin */
+  padding: 0 !important;
+}
+
 
 /* .mil-top-panel .mil-logo img {
   width: 640px;  

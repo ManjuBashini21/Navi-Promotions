@@ -29,7 +29,7 @@
                 <!-- mil-top-panel-transparent -->
                 <div class="container">
                     <a href="index.html" class="mil-logo">
-                        <img src="img/logo/navi-logo web manju.png" alt="NaviPromotion Logo" style="width: 300px; margin-top: 10px;" >
+                        <img id="logo" src="img/logo/navi-logo web manju.png" alt="NaviPromotion Logo" style="width: 300px;" >
                     </a>
                     <div class="mil-navigation">
                         <nav>
@@ -305,8 +305,8 @@
                     <div class="col-xl-5 mil-mb-60">
                         <span class="mil-suptitle mil-suptitle-2 mil-mb-30">Join Our Team</span>
                         <h2 class="mil-mb-30">Why <span class="mil-accent">Work</span> With Us?</h2>
-                        <p class="mil-mb-15" style="text-align: justify;">At Navi Promotions, we believe in fostering creativity, innovation, and professional growth. Our team is dedicated to delivering impactful digital solutions while maintaining a collaborative and supportive work environment.</p>
-                        <p class="mil-mb-50" style="text-align: justify;">We provide opportunities to work on exciting projects, enhance your skills, and be part of a dynamic team that values your contributions and career development.</p>
+                        <p class="mil-mb-15">At Navi Promotions, we believe in fostering creativity, innovation, and professional growth. Our team is dedicated to delivering impactful digital solutions while maintaining a collaborative and supportive work environment.</p>
+                        <p class="mil-mb-50">We provide opportunities to work on exciting projects, enhance your skills, and be part of a dynamic team that values your contributions and career development.</p>
                         <div class="mil-buttons-frame">
                             <a href="contact.html" class="mil-button mil-border"><span>Join Us</span></a>
                             <a href="careers.html" class="mil-link"><span>Explore Careers</span><i class="fas fa-arrow-right"></i></a>
@@ -743,6 +743,26 @@
 });
 
     </script>
+
+<script>
+
+    window.addEventListener("scroll", function () {
+        var logo = document.getElementById("logo");
+        var topPanel = document.querySelector(".mil-top-panel");
+
+        if (window.scrollY > 50) {
+            logo.src = "img/logo/fixed-logo.png";
+            logo.style.margin = "0";  
+            logo.style.padding = "0";
+            topPanel.classList.add("scrolled"); 
+        } else {
+            logo.src = "img/logo/navi-logo web manju.png"; 
+            logo.style.marginTop = "10px";  
+            topPanel.classList.remove("scrolled");
+        }
+    });
+
+</script>
 
     <!-- jQuery js -->
     <script src="js/plugins/jquery.min.js"></script>
