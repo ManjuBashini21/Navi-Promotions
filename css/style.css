@@ -110,6 +110,8 @@ body a:hover{
 } */
 
 
+
+
 .mil-modal {
   display: none;
   position: fixed;
@@ -3985,8 +3987,9 @@ breadcrumbs
   -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
 }
-.mil-relative h2{
+.mil-relative h1{
   color: #faa51f;
+  font-size: 32px;
 }
 .mil-breadcrumbs li a:hover {
   color: #faa51f;
