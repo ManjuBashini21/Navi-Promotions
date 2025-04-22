@@ -29,6 +29,87 @@
     <meta name="description" content="Navi Promotions offers digital marketing, branding, and promotional services to boost online presence.">
 
     <title>Best Digital Marketing Company in Theni</title>
+
+    <style>
+        .scroller-section {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            padding: 20px 0;
+            background: #f5f5f5;
+        }
+        
+        .scroller-container {
+            display: flex;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+        }
+        
+        .scroller-container:hover {
+            animation-play-state: paused;
+        }
+        
+        .scroller-item {
+            flex: 0 0 auto;
+            width: 360px;
+            height: 150px;
+            margin: 50px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .scroller-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .scroller-item img {
+            width: 100%;
+            height: 100%;
+            margin: 5px;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+        
+        /* Remove hover effect on images */
+        .scroller-item:hover img {
+            filter: grayscale(0%); /* Maintain grayscale on hover */
+        }
+        
+        
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .scroller-item {
+                width: 150px;
+                height: 112px;
+                margin: 0 10px;
+            }
+            
+            .scroller-container {
+                animation-duration: 20s;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .scroller-item {
+                width: 120px;
+                height: 90px;
+                margin: 0 8px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -209,35 +290,48 @@
         </div>
         <!-- banner end -->
 
+        
+
         <!-- partners -->
-        <div class="mil-partners mil-p-90-60">
-            <div class="container">
-                <div class="col-md-6 col-xl-6">
-
-                    <h2 class="mil-mb-30">Our Partners</h2>
-
-                </div>
-                <div class="mil-partners-frame">
-                    <a href="#."><img src="img/partners/alagugym.png" alt="partner"></a>
-                    <a href="#."><img src="img/partners/anaaimalais.jpg" alt="partner"></a>
-                    <a href="#."><img src="img/partners/appaguru.jpeg" alt="partner"></a>
-                    <a href="#."><img src="img/partners/ara.png" alt="partner"></a>
-                    <a href="#."><img src="img/partners/athithya.png" alt="partner"></a>
-                    <a href="#."><img src="img/partners/lavanya.png" alt="partner"></a>
-                    <a href="#."><img src="img/partners/mma.png" alt="partner"></a>
-                    <a href="#."><img src="img/partners/pixelcctv.png" alt="partner"></a>
-                    <a href="#."><img src="img/partners/rgdental.png" alt="partner"></a>
-                    <a href="#."><img src="img/partners/sengheng.jpeg" alt="partner"></a>
-                    <a href="#."><img src="img/partners/shobimakeovers.png" alt="partner"></a>
-                    <a href="#."><img src="img/partners/tamilsangu.png" alt="partner"></a>
-                    <a href="#."><img src="img/partners/tej.jpeg" alt="partner"></a>
-                    <a href="#."><img src="img/partners/vertic.png" alt="partner"></a>
-                    <a href="#."><img src="img/partners/xenex.png" alt="partner"></a>
-                    <a href="#."><img src="img/partners/alagugym.png" alt="partner"></a>
-                </div>
+        <section class="scroller-section">
+            <div class="scroller-container">
+                <!-- Original 16 images -->
+                <div class="scroller-item"><img src="img/partners/alagugym.png" alt="Image 1"></div>
+                <div class="scroller-item"><img src="img/partners/anaaimalais.png" alt="Image 2"></div>
+                <div class="scroller-item"><img src="img/partners/appaguru.png" alt="Image 3"></div>
+                <div class="scroller-item"><img src="img/partners/ara.png" alt="Image 4"></div>
+                <div class="scroller-item"><img src="img/partners/athithya.png" alt="Image 5"></div>
+                <div class="scroller-item"><img src="img/partners/lavanya.png" alt="Image 6"></div>
+                <div class="scroller-item"><img src="img/partners/mma.png" alt="Image 7"></div>
+                <div class="scroller-item"><img src="img/partners/pixelcctv.png" alt="Image 8"></div>
+                <div class="scroller-item"><img src="img/partners/rgdental.png" alt="Image 9"></div>
+                <div class="scroller-item"><img src="img/partners/sengheng.png" alt="Image 10"></div>
+                <div class="scroller-item"><img src="img/partners/shobimakeovers.png" alt="Image 11"></div>
+                <div class="scroller-item"><img src="img/partners/tamilsangu.png" alt="Image 12"></div>
+                <div class="scroller-item"><img src="img/partners/tej.png" alt="Image 13"></div>
+                <div class="scroller-item"><img src="img/partners/vertic.png" alt="Image 14"></div>
+                <div class="scroller-item"><img src="img/partners/xenex.png" alt="Image 15"></div>
+                
+                <!-- Duplicate of the 16 images for seamless looping -->
+                <div class="scroller-item"><img src="img/partners/alagugym.png" alt="Image 1"></div>
+                <div class="scroller-item"><img src="img/partners/anaaimalais.png" alt="Image 2"></div>
+                <div class="scroller-item"><img src="img/partners/appaguru.png" alt="Image 3"></div>
+                <div class="scroller-item"><img src="img/partners/ara.png" alt="Image 4"></div>
+                <div class="scroller-item"><img src="img/partners/athithya.png" alt="Image 5"></div>
+                <div class="scroller-item"><img src="img/partners/lavanya.png" alt="Image 6"></div>
+                <div class="scroller-item"><img src="img/partners/mma.png" alt="Image 7"></div>
+                <div class="scroller-item"><img src="img/partners/pixelcctv.png" alt="Image 8"></div>
+                <div class="scroller-item"><img src="img/partners/rgdental.png" alt="Image 9"></div>
+                <div class="scroller-item"><img src="img/partners/sengheng.png" alt="Image 10"></div>
+                <div class="scroller-item"><img src="img/partners/shobimakeovers.png" alt="Image 11"></div>
+                <div class="scroller-item"><img src="img/partners/tamilsangu.png" alt="Image 12"></div>
+                <div class="scroller-item"><img src="img/partners/tej.png" alt="Image 13"></div>
+                <div class="scroller-item"><img src="img/partners/vertic.png" alt="Image 14"></div>
+                <div class="scroller-item"><img src="img/partners/xenex.png" alt="Image 15"></div>
             </div>
-        </div>
+        </section>
         <!-- partners end -->
+
 
         <div class="container">
             <div class="mil-divider"></div>
